@@ -593,13 +593,11 @@ img {
   border-radius: 50%;
   background: var(--border-textfooter);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  z-index: 1;
 }
 .modal-btn-image {
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: 8px;
+  right: 8px;
   width: 8px;
   height: 8px;
-  z-index: 2;
 }
