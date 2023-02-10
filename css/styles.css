@@ -366,15 +366,15 @@ img {
   justify-content: center;
   align-items: center;
   border: 1px solid var(--border-icon-color);
-
+  color: var(--border-icon-color);
   border-radius: 4px;
   width: 168px;
   height: 88px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-list-image {
-  fill: var(--border-icon-color);
+  fill: currentColor;
   width: 104px;
   height: 56px;
 }
@@ -385,6 +385,7 @@ img {
 .customer-list-link:hover,
 .customer-list-link:focus {
   border-color: var(--active-blue);
+  color: var(--active-blue);
 }
 /* Portfolio */
 .portfolio-section {
@@ -585,6 +586,9 @@ img {
 }
 .modal-btn {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   top: 24px;
   right: 24px;
@@ -595,9 +599,6 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .modal-btn-image {
-  position: absolute;
-  top: 8px;
-  right: 8px;
   width: 8px;
   height: 8px;
 }
